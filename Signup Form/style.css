@@ -1,0 +1,133 @@
+
+.signup-form{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display:flex;
+    gap: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+h1{
+    text-align: center;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+   
+}
+
+input[type="checkbox"], label{
+ 
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#firstname, #pw ,#lastname, #confirm-pw{
+    width: 50%;
+}
+
+
+#pw-container{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input:focus{
+    outline: dodgerblue;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+
+#register{
+    color: white;
+    background-color:  rgb(88,155,210);;
+    border-color:dodgerblue;
+    border-radius: 5px;
+    width: 50%;
+    
+}
+
+#signin{
+    background-color: limegreen;
+    border-color: green;
+    width: 50%;
+}
+
+#agree-container{
+    justify-content: start;
+}
+
+#pw-container{
+    flex-direction: column;
+}
+
+/* .agree{
+    display: inline-block;
+    /* width: 50%; */
+ */
+
+#agree {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* label[for="agree"]{
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+  
+.checkbox-label label{
+    margin-left: 1px;
+}
+
+label{
+    width: 100px;
+}
+
+.prompt{
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+#agree-container{
+    justify-content: start;
+
+}
+
+.checkbox-container{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+strong{
+    color: white;
+    background-color: rgb(88,155,210);
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
