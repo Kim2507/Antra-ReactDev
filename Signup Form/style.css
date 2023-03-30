@@ -1,133 +1,156 @@
-
-.signup-form{
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    display:flex;
-    gap: 20px;
-}
-input{
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 10px;
-
-}
-h1{
-    text-align: center;
+:root{
+    --color-primary:#4285F4;
+    --color-primary-dark:#0d47a1;
+    --color-success:#00C851;
+    --color-success-dark:#007E33;
+    --color-grey:#e0e0e0;
+    --color-grey-dark:#757575;
 }
 
-.form-row{
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-   
+*, *::before, *::after{
+  margin: 0;
+  padding:0;
+  box-sizing: inherit
 }
 
-input[type="checkbox"], label{
- 
-    display: inline-block;
-    vertical-align: middle;
-
+html{
+  font-size: 70%;
 }
 
-a{
-    text-decoration: none;
-}
-
-
-#firstname, #pw ,#lastname, #confirm-pw{
-    width: 50%;
-}
-
-
-#pw-container{
-    flex-direction: column;
-    gap: 1rem;
-}
-
-input:focus{
-    outline: dodgerblue;
-    border-color: dodgerblue;
-    box-shadow: 0 0 5px dodgerblue;
-}
-
-#register{
-    color: white;
-    background-color:  rgb(88,155,210);;
-    border-color:dodgerblue;
-    border-radius: 5px;
-    width: 50%;
-    
-}
-
-#signin{
-    background-color: limegreen;
-    border-color: green;
-    width: 50%;
-}
-
-#agree-container{
-    justify-content: start;
-}
-
-#pw-container{
-    flex-direction: column;
-}
-
-/* .agree{
-    display: inline-block;
-    /* width: 50%; */
- */
-
-#agree {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* label[for="agree"]{
-    display: inline-block;
-    vertical-align: middle;
-} */
-
-.checkbox-label {
-    display: flex;
-    align-items: center;
-}
-  
-.checkbox-label label{
-    margin-left: 1px;
+body{
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 label{
-    width: 100px;
+  cursor: pointer;
 }
 
-.prompt{
-    display: inline-block;
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+input[type='checkbox']{
+  cursor: pointer;
 }
 
+.form-container{
+  position: fixed;
+  width: 100%;
+  max-width: 50rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
+.fname, .lname, .mobile, .email, .pw, .cpw{
+    width:100%;
+    padding: 10px;
+}
 
+.signup-form{
+  display:flex;
+  flex-direction: column;
+}
 
-#agree-container{
-    justify-content: start;
+.signup-form .signup-form-header{
+  text-align: center;
+  margin: 5px;
+}
+
+.signup-form .row{
+  display:flex;
+  flex: 1 1 100%;
+  margin : 1px;
+}
+
+.signup-form .row .row-item{
+  flex: 1 1 100%;
+  margin: 0.5rem 1rem;
+  padding: 0%;
+
 
 }
 
-.checkbox-container{
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+.row-item .input{
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border:1px solid var(--color-grey);
+  outline: none;
 }
 
-strong{
-    color: white;
-    background-color: rgb(88,155,210);
+.row-item input:focus{
+  box-shadow: 0 0 2px 2px #88b8ff;
+}
+
+.row .agree-row{
+    display:flex;
+    margin-top: 8px;
+}
+
+.row .checkbox-agree{
+    flex: 1 1 40%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    min-width: 2rem;
+}
+
+.row .terms{
+    font-size: 1.2rem;
+}
+
+.row .terms .register-span{
+    background-color: #4285F4;
+    /* display: inline-block; */
+    color: #fff;
+    padding:1px 4px;
+    border-radius: 3px;
+}
+
+.row .terms a{
+    text-decoration: none;
+    color: blue;
+}
+
+.btn{
+    border: none;
+    background-color: var(--color-grey-dark);
+    outline: none;
+}
+.register{
+    color: #fff;
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 10px;
     border-radius: 5px;
-    padding: 5px 10px;
 
+}
+
+.register:active{
+    background-color: var(--color-primary-dark);
+}
+
+.signin{
+    color: #fff;
+    background-color: var(--color-success);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.signin:active{
+    background-color: var(--color-success-dark);
+}
+
+@media (max-width:600px){
+    .signup-form .row{
+        flex-direction: column;
+    }
+    .checkbox-agree label{
+        display: none;
+    }
+    .checkbox-agree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
