@@ -57,8 +57,8 @@ input[type='checkbox']{
 
 .signup-form .row{
   display:flex;
-  flex: 1 1 100%;
-  margin : 1px;
+  flex: 2 1 100%;
+  /* margin : 1px; */
 }
 
 .signup-form .row .row-item{
@@ -145,12 +145,12 @@ input[type='checkbox']{
     .signup-form .row{
         flex-direction: column;
     }
-    .checkbox-agree label{
+    /* .checkbox-agree label{
         display: none;
     }
     .checkbox-agree {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }
