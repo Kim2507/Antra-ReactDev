@@ -57,16 +57,14 @@ input[type='checkbox']{
 
 .signup-form .row{
   display:flex;
-  flex: 2 1 100%;
-  /* margin : 1px; */
+  flex: 1 1 100%;
+  margin : 1px;
 }
 
 .signup-form .row .row-item{
   flex: 1 1 100%;
   margin: 0.5rem 1rem;
   padding: 0%;
-
-
 }
 
 .row-item .input{
