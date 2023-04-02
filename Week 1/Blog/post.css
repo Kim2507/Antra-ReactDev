@@ -1,0 +1,178 @@
+
+*, *::before, *::after{
+    margin: 0;
+    padding:0;
+    box-sizing: inherit
+  }
+  
+  html{
+    font-size: 62.25%; /*10px*/
+  }
+  
+  body{
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 35% 35% 30%;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 5% 40% 40% 5%; 
+    grid-template-areas: 
+        "header header header"
+        "main main about"
+        "main main about"
+        "footer footer footer";
+    border: solid red;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100vh; */
+    height: 100%;
+    column-gap: 0;
+    
+  
+  }
+
+  .header{
+    grid-area: header;
+    /* height: 50px;
+    border: solid pink; */
+  }
+
+  .header .title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .main{
+    grid-area: main;
+    height: calc(100vh-80px);
+    padding: 2rem;
+    padding-bottom: 10rem;
+
+  }
+
+  .about{
+    grid-area: about;
+    position: sticky;
+    padding: 2rem;
+    padding-bottom: 50px;
+  }
+
+  .footer{
+    grid-area: footer;
+    height: 30px; /* set the fixed height of the last row */
+    /* background-color: #ccc; */
+    color: #fff;
+    /* padding-top: 15rem;
+    padding-bottom: 0; */
+
+    margin-top: 5%;
+    padding: 10px;
+    background-color: rgba(234, 231, 231, 0.937);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+
+  }
+
+  
+
+  .content-grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .post-column {
+    flex-basis: calc(2/3*100% - 10px); /* set the flex-basis of the first column */
+    margin-right: 2px; /* add some margin between the columns */
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box; /* include padding in the element width */
+  }
+
+  .about-column {
+    flex-basis: calc(1/3*100% - 10px); /* set the flex-basis of the second column */
+    margin-right: 0; /* remove margin from the last item */
+  }
+
+  .sample-blog{
+    padding-bottom: 1rem;
+  }
+
+  .content-heading .sub-heading{
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+
+
+.btn-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.btn-container .older{
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: rgb(0, 136, 255);
+    border-color: rgb(0, 136, 255);
+    background-color: white;
+    box-shadow: none;
+    cursor: pointer;
+
+}
+
+.btn-container .newer{
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: grey;
+    border-color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+
+.about .about-box{
+    border: 1px solid lightgrey ;
+    background-color: lightgray;
+    padding: 6%;
+}
+
+.about .archives-elsewhere{
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

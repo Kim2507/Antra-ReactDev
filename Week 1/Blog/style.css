@@ -53,9 +53,9 @@
 
 }
 
-/* header ,footer{
-    position: fixed;
-} */
+header ,footer{
+    position: absolute;
+}
 
 
   @media only screen and (max-width: 768px) {
