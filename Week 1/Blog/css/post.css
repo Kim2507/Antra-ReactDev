@@ -13,6 +13,8 @@
     font-size: 1.8rem;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    
   }
 
 .grid-container{
@@ -25,7 +27,7 @@
         "main main about"
         "main main about"
         "footer footer footer";
-    border: solid red;
+    /* border: solid red; */
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -47,6 +49,12 @@
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+
+  }
+
+  .header a{
+    padding: 2rem;
+    padding-top: 1rem;
   }
 
   .main{
@@ -73,7 +81,9 @@
     padding-bottom: 0; */
 
     margin-top: 5%;
+    margin-bottom: 0%;
     padding: 10px;
+    padding-bottom: 0;
     background-color: rgba(234, 231, 231, 0.937);
     display: flex;
     flex-direction: column;
@@ -141,7 +151,7 @@
 .about .about-box{
     border: 1px solid lightgrey ;
     background-color: lightgray;
-    padding: 6%;
+    padding: 3%;
 }
 
 .about .archives-elsewhere{
@@ -149,6 +159,26 @@
     font-size: 30px;
     margin-bottom: 0;
 }
+
+.code-block{
+  display: inline-block;
+  border: 1px solid grey;
+}
+
+.p-container{
+  padding-top: 1rem;
+  padding-bottom: 1rem;;
+}
+
+.p-container a{
+  color:blue;
+}
+
+.list-container{
+  padding-left: 4rem;
+}
+
+
 
 
 
