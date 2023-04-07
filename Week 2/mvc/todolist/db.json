@@ -1,0 +1,26 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Complete project"
+    },
+    {
+      "id": 2,
+      "title": "Buy groceries"
+    },
+    {
+      "id": 3,
+      "title": "Clean the house"
+    },
+    {
+      "title": "practicing dom",
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ]
+}

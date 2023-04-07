@@ -88,6 +88,37 @@ function foo(a){
 const x = (a) => (b) => (c) => a+b+c;
 console.log(x(5)(10)(35));
 
+
+// let a = "a";
+// console.log(a);
+// let b = "b";
+// console.log(b);
+
+// function slowFunction() {
+//     for(let i = 0; i < 1000000000; i++) {
+
+//     }
+//     return 5;
+// }
+
+
+// function foo(){
+//     console.log("foo");
+//     return;
+// }
+
+// foo()
+// foo()
+// foo()
+// foo()
+
+
+// setTimeout(() => {
+//   console.log("I am the first callback");
+// }, 1000);
+
+// console.log("hello world")
+
 // [1,2,3,4,5].forEach(value){
 
 // }
@@ -97,3 +128,7 @@ console.log(x(5)(10)(35));
  * - Arrow function
  * - Closure
  */
+
+// how to create a event call stack in js?
+// how to create a simple blog page using html?
+
